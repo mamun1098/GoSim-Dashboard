@@ -36,7 +36,7 @@
         </div>
         <ul id="sidebar_menu">
             <li class="">
-                <a class="active" href="#">
+                <a class="" href="#">
                     <div class="nav_icon_small">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                             <path
@@ -60,7 +60,7 @@
             </li>
             <li class="">
                 <span class="category_title">Esim management</span>
-                <a class="has_arrow" href="#">
+                <a class="has_arrow active" href="destinations.html">
                     <div class="nav_icon_small">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                             <path
@@ -232,14 +232,15 @@
                     <div class="header_iner d-flex justify-content-between align-items-center">
                         <ul class="custom-breadcrumb">
                             <li><a href="index.html">GoSIM /</a></li>
-                            <li><span>Dashboard</span></li>
+                            <li><span>Destinations</span></li>
                         </ul>
                         <div class="header_right d-flex align-items-center">
                             <!-- searchbar -->
                             <div class="serach_field_area">
                                 <form action="#">
                                     <div class="search_field">
-                                        <img class="search-image" src="assets/images/icons/search.svg" alt="search icon">
+                                        <img class="search-image" src="assets/images/icons/search.svg"
+                                            alt="search icon">
                                         <input type="text" placeholder="Search orders, eSIMs, users..." name="search">
                                     </div>
                                 </form>
@@ -259,6 +260,7 @@
                                     <li class="see_all_notificaiton"><a class="dropdown-item" href="#">See All</a></li>
                                 </ul>
                             </div>
+                            <!-- Flag -->
                             <div class="dropdown flag_dropdown_wrapper">
                                 <button class="flag_dropdown dropdown-toggle" type="button" id="dropdownMenuButton1"
                                     data-bs-toggle="dropdown" aria-expanded="false"><span
@@ -316,15 +318,270 @@
         <!-- dashboard menu end -->
 
         <!-- Dashboard content start -->
-         <div class="dashboard-content">
+        <div class="dashboard-content">
+
+            <!-- Page title start -->
             <div class="dashboard-section-title">
-                <h2 class="title">dashboard</h2>
+                <h2 class="title">Destinations</h2>
+                <p>Manage global service zones, regions, and country-specific connectivity.</p>
             </div>
-         </div>
+            <!-- Page title end -->
+
+            <!-- Common Tab Start -->
+            <ul class="nav dashboard_common_tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                        type="button" role="tab" aria-controls="home" aria-selected="true">Regions</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                        type="button" role="tab" aria-controls="profile" aria-selected="false">Countries</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <!-- Common Search and Add Button Start -->
+                    <div class="dashboard_search_addNew_box">
+                        <div class="serach_field_area">
+                            <form action="#">
+                                <div class="search_field">
+                                    <img class="search-image" src="assets/images/icons/search.svg" alt="search icon">
+                                    <input type="text" placeholder="Search regions..." name="search">
+                                </div>
+                            </form>
+                        </div>
+                        <button type="button" class="common_button add_new_button" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal" data-bs-whatever="@mdo">+ Add Region</button>
+                    </div>
+                    <!-- Common Search and Add Button End-->
+
+                    <!-- Region Card Start -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="region_card">
+                                    <div class="cards-header">
+                                        <div class="icon-container">
+                                            <img src="assets/images/icons/maps.svg" alt="maps icon">
+                                        </div>
+                                        <button class="dashboard-menu-dots" data-bs-toggle="dropdown"
+                                            aria-expanded="false" type="button">
+                                            <img src="assets/images/icons/dots.svg" alt="dots">
+                                        </button>
+
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <span>Edit</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <span>Delete</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="cards-body">
+                                        <h2 class="title">Europe</h2>
+                                        <div class="subtitle">
+                                            <span class="globe-icon"><img src="assets/images/icons/earth.svg" width="10"
+                                                    height="10" alt="icon"></span> Zone R1
+                                        </div>
+                                    </div>
+                                    <div class="cards-footer">
+                                        <div class="state">
+                                            <label>Countries</label>
+                                            <div class="value">44</div>
+                                        </div>
+                                        <div class="state">
+                                            <label>Active Plans</label>
+                                            <div class="value">120</div>
+                                        </div>
+                                        <div class="dashboared-status-badge active">ACTIVE</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Region Card End -->
+                </div>
+
+
+
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <!-- Common Search and Add Button Start -->
+                    <div class="dashboard_search_addNew_box">
+                        <div class="serach_field_area">
+                            <form action="#">
+                                <div class="search_field">
+                                    <img class="search-image" src="assets/images/icons/search.svg" alt="search icon">
+                                    <input type="text" placeholder="Search Countries..." name="search">
+                                </div>
+                            </form>
+                        </div>
+                        <button type="button" class="common_button add_new_button" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal" data-bs-whatever="@mdo">+ Add Country</button>
+                    </div>
+                    <!-- Common Search and Add Button End-->
+
+                    <!-- Common Table Start-->
+                    <div class="dashboard_common_table">
+                        <table class="table">
+                            <thead class="table-heading">
+                                <tr>
+                                    <th scope="col">Country</th>
+                                    <th scope="col">ISO Code</th>
+                                    <th scope="col">Region</th>
+                                    <th scope="col">Plans</th>
+                                    <th scope="col">Network Status</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">United Kingdom</th>
+                                    <td>GB</td>
+                                    <td>Europe</td>
+                                    <td>
+                                        <div class="plan-text">15 Plans</div>
+                                    </td>
+                                    <td>
+                                        <div class="network_status">
+                                            <img src="assets/images/icons/wifi.svg" alt="network icon">
+                                            5G Supported
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="dashboared-status-badge active">Active</div>
+                                    </td>
+                                    <td>
+                                        <button class="dashboard-menu-dots" data-bs-toggle="dropdown"
+                                            aria-expanded="false" type="button">
+                                            <img src="assets/images/icons/dots.svg" alt="dots">
+                                        </button>
+
+                                        <ul class="dropdown-menu dashboared-table-dropdown">
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <span>Edit</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <span>Disable</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">France</th>
+                                    <td>FR</td>
+                                    <td>Asia Pacific</td>
+                                    <td>
+                                        <div class="plan-text">15 Plans</div>
+                                    </td>
+                                    <td>
+                                        <div class="network_status">
+                                            <img src="assets/images/icons/wifi.svg" alt="network icon">
+                                            5G Supported
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="dashboared-status-badge pending">Maintenance</div>
+                                    </td>
+                                    <td>
+                                        <button class="dashboard-menu-dots" data-bs-toggle="dropdown"
+                                            aria-expanded="false" type="button">
+                                            <img src="assets/images/icons/dots.svg" alt="dots">
+                                        </button>
+
+                                        <ul class="dropdown-menu dashboared-table-dropdown">
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <span>Edit</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <span>Disable</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- Common Table End-->
+
+                </div>
+            </div>
+            <!-- Common tab end -->
+
+
+        </div>
         <!-- Dashboard content end -->
     </section>
     <!-- main content part end -->
 
+
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2>Add New Global Region</h2>
+            <button class="close-btn">&times;</button>
+        </div>
+
+        <form class="modal-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Region Name<span>*</span></label>
+                    <input type="text" placeholder="E.g. South Asia">
+                </div>
+                <div class="form-group">
+                    <label>Unique Code<span>*</span></label>
+                    <input type="text" placeholder="e.g. SASIA">
+                </div>
+            </div>
+
+            <div class="form-group full-width">
+                <label>Description<span>*</span></label>
+                <div class="wysiwyg-editor">
+                    <div class="toolbar">
+                        <button type="button">↶</button><button type="button">↷</button>
+                        <select>
+                            <option>Paragraph</option>
+                        </select>
+                        <button type="button"><b>B</b></button><button type="button"><i>I</i></button>
+                        <button type="button">≡</button><button type="button">🖼️</button>
+                    </div>
+                    <textarea rows="6"></textarea>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Priority Order<span>*</span></label>
+                    <input type="number" value="1">
+                </div>
+                <div class="form-group">
+                    <label>Initial Status<span>*</span></label>
+                    <select>
+                        <option>Active</option>
+                        <option>Inactive</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="button" class="btn-cancel">Cancel</button>
+                <button type="submit" class="btn-save">Save</button>
+            </div>
+        </form>
+    </div>
 
 </body>
 

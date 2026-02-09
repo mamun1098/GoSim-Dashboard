@@ -1,0 +1,41 @@
+.dashboard_search_addNew_box{
+    padding: 10px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* COMMON SEARCH START */
+.serach_field_area {
+    max-width: 225px;
+    width: 100%;
+
+    .search_field {
+        position: relative;
+        max-width: 225px;
+
+        .search-image {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        input {
+            border: 1px solid rgba(226, 232, 240, 1);
+            outline: none;
+            background: rgba(248, 250, 252, 1);
+            border-radius: 4px;
+            padding: 11px 18px 11px 35px;
+            width: 100%;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 24px;
+            color: rgba(97, 107, 128, 1);
+            width: 100%;
+        }
+    }
+}
+/* COMMON SEARCH END */

@@ -1,0 +1,27 @@
+/* COMMON BUTTON START */
+.common_button,
+a.common_button {
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+
+    &.add_new_button {
+        background-color: #4F46E5;
+        color: #fff;
+
+        &:hover {
+            background-color: #0F172A;
+            color: #fff;
+        }
+    }
+}
+
+/* COMMON BUTTON END */

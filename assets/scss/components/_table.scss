@@ -1,0 +1,75 @@
+/* DASHBOARD TABLE START */
+.dashboard_common_table {
+    padding: 20px 20px 0px 20px;
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+
+    .table {
+        margin-bottom: 0;
+
+        thead.table-heading {
+            background: #F8FAFC;
+            border: 1px solid #E2E8F0;
+
+            th {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 24px;
+                color: #616B80;
+            }
+        }
+
+        tbody {
+
+            th,
+            td {
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 100%;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .table>:not(:last-child)>:last-child>* {
+        border-bottom-color: #E2E8F0;
+    }
+
+    .table>:not(caption)>*>* {
+        padding: 17px 10px;
+    }
+
+    tr:last-child>* {
+        border-bottom-width: 0;
+    }
+
+    .network_status {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 100%;
+        color: #10B981;
+
+        img {
+            margin-right: 4px;
+        }
+
+    }
+
+    .plan-text {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 100%;
+        color: #4F46E5;
+
+    }
+
+    .dashboared-status-badge {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 100%;
+        text-transform: capitalize;
+        padding-bottom: 4px;
+    }
+}
+
+/* DASHBOARD TABLE END */
